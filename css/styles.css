@@ -5,3 +5,84 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
+
+.navbar-brand {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 56.5px);
+  margin: 0;
+  padding: 0;
+  z-index: 300;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 49px;
+  top: 20px;
+  padding: 0;
+  background: #019FCB;
+  width: 35px;
+  height: 35px;
+  border-radius: 0;
+}
+
+.navbar-toggler.collapsed {
+  background: linear-gradient(#878484, #000);
+}
+
+.navbar-light .navbar-toggler-icon {
+  width: 25px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-width='5' stroke-linecap='round' stroke-miterlimit='10' d='M4 6h22M4 15h22M4 24h22'/%3e%3c/svg%3e");
+}
+
+.collapsing {
+  transition: none;
+}
+
+.navbar-supported-content {
+  z-index: 400;
+}
+
+.navbar-supported-content.item-3 {
+  flex-direction: row-reverse;
+}
+
+.navbar-supported-content.item-4 {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px)  {
+
+  .navbar-supported-content {
+    position: absolute;
+    right: 49px;
+    width: 200px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .navbar-supported-content.item-1 {
+    top: 55px;
+  }
+
+  .navbar-supported-content.item-2 {
+    top: 96px;
+  }
+
+  .navbar-supported-content.item-3 {
+    top: 137px;
+    flex-direction: unset;
+  }
+
+  .navbar-supported-content.item-4 {
+    top: 178px;
+    flex-direction: unset;
+  }
+
+  .navbar-supported-content .nav-link {
+    padding: .5rem 1rem;
+  }
+
+}
