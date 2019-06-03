@@ -52,6 +52,45 @@ html, body {
   flex-direction: row-reverse;
 }
 
+.carousel {
+  margin-top: 82px;
+  height: 388px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  margin-top: 125px;
+  transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+  background: #95989a;
+  opacity: 1;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 8px;
+  width: 8px;
+  height: 8px;
+}
+
+.carousel-indicators .active {
+  background: #0050a2;
+}
+
+.carousel-caption {
+  right: 0;
+  left: 0;
+  bottom: 175px;
+  padding: 20px 10% 20px 10%;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: 300;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 8%;
+}
+
 @media only screen and (max-width: 768px)  {
 
   .navbar-supported-content {
@@ -83,6 +122,23 @@ html, body {
 
   .navbar-supported-content .nav-link {
     padding: .5rem 1rem;
+  }
+
+  .carousel {
+    height: 250px;
+    margin-top: 122px;
+  }
+
+  .carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    margin-bottom: -64px;
+    padding: 20px 10% 20px 10%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+    font-size: 0.75rem;
   }
 
 }
