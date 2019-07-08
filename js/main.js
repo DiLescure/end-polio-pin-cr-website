@@ -1,3 +1,11 @@
+$(function() {
+  $('a').click(function(e) {
+    if ((/http/).test($(e.target).attr('href'))) {
+      alert('Usted está siendo redirigido a una página externa. Al terminar, puede volver a esta página para continuar con el proceso de adquisición del Pin.');
+    }
+  });
+});
+
 function initAdquiriElPin() {
   var self = this;
 
