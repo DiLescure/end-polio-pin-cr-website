@@ -34,7 +34,7 @@ function initAdquiriElPin() {
     }
 
     $('.current-step').html(self.currentStep);
-    $('.progress-bar').attr('style', 'width: ' + (self.currentStep * 16) + '%');
+    $('.progress-bar').attr('style', 'width: ' + ((self.currentStep < 6)? self.currentStep * 16 : 100) + '%');
     $('.step').addClass('fade');
     setTimeout(function() {
       $('.step').addClass('d-none');
