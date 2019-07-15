@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
   <link rel="stylesheet" href="/css/styles.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="/js/main.js"></script>
@@ -21,16 +21,9 @@
   <div class="content">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="collapse navbar-collapse navbar-supported-content item-1">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="/">Inicio</a>
-          </li>
-        </ul>
-      </div>
-      <div class="collapse navbar-collapse navbar-supported-content item-2">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="https://www.endpolio.org/es">Don&aacute;</a>
           </li>
         </ul>
       </div>
@@ -46,17 +39,10 @@
       <a class="navbar-brand" href="/">
         <img src="/assets/logo-end-polio-now.png" alt="End Polio Now Logo" width="113">
       </a>
-      <div class="collapse navbar-collapse navbar-supported-content item-3">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse navbar-supported-content item-2">
+        <ul class="navbar-nav mx-auto">
           <li class="nav-item">
             <a class="nav-link" href="/adquiri-el-pin">Adquir&iacute; el Pin</a>
-          </li>
-        </ul>
-      </div>
-      <div class="collapse navbar-collapse navbar-supported-content item-4">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/como-donar">¿C&oacute;mo donar?</a>
           </li>
         </ul>
       </div>
@@ -66,19 +52,55 @@
     </nav>
     <div class="steps mx-4">
       <div class="text-center step-progress">
-        <span class="current-step">1</span> de 6
+        <span class="current-step">1</span> de 5
       </div>
       <div class="progress">
         <div class="progress-bar" role="progressbar" style="width: 16%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="6"></div>
       </div>
       <div class="step">
         <h2 class="mt-4">
-          <span class="step-number">01.</span> <span class="step-title">Adjuntar Captura de Pantalla</span>
+          <span class="step-number">01.</span> <span class="step-title">Escoge el tipo de pago</span>
         </h2>
-        <div class="step-instructions text-muted">
-          Adjunte la captura de pantalla de la confirmaci&oacute;n de la donaci&oacute;n al proyecto #EndPolioCR
+        <div class="row mx-0">
+          <p>
+            Al comprar el pin de <i>End Polio Now Costa Rica</i> estar&aacute;s pagando el costo del pin (5 USD) m&aacute;s una donación autom&aacute;tica a la campa&ntilde;a de End Polio Plus.
+          </p>
+          <p>
+            El pago m&iacute;nimo es de 8 USD <span class="text-muted">(el equivalente a 5 USD del pin + 3 USD de donación)</span>.
+          </p>
+          <p>
+            <strong>No hay m&aacute;ximo</strong>, lo que desees donar m&aacute;s all&aacute; de los 5 USD del pin ayudar&aacute; a  poner fin a la polio de una vez por siempre.
+          </p>
+          <p>
+            Selecciona tu opci&oacute;n de pago a continuaci&oacute;n:
+          </p>
         </div>
-        <div class="upload-image-container row mx-0 mt-4">
+        <div class="boxed-choices row mx-0">
+          <a href="#" class="choice-box col-6 choice-1 deposit-choice">
+            <span class="choice-box-title text-center mb-2">
+              Dep&oacute;sito
+            </span>
+            <span class="choice-box-details">
+              <strong>CC:</strong><br class="d-sm-none"/> 0918283749490<br/>
+              <strong>Nombre:</strong><br class="d-sm-none"/> Club Rotario Heredia<br/>
+              <strong>Ced. Jur&iacute;dica:</strong><br class="d-sm-none"/> 3-101-12345
+            </span>
+          </a>
+          <a href="#" class="choice-box col-6 choice-2 next cash-choice">
+            <span class="choice-box-title text-center mb-2">
+              Efectivo
+            </span>
+            <span class="choice-box-details">
+              Contra entrega
+            </span>
+          </a>
+        </div>
+        <div class="upload-image-container row mx-0 mt-4 invisible">
+          <div class="row mx-0">
+            <p>
+              Para poder continuar, requerimos que adjuntes una captura de pantalla o foto del dep&oacute;sito realizado:
+            </p>
+          </div>
           <div class="col-8">
             <a class="btn cta smaller pick-file" href="#" role="button">Escoger Archivo</a>
           </div>
@@ -89,18 +111,39 @@
             <input type="file" name="files" />
           </div>
         </div>
+        <div class="upload-image-uploading mt-5 invisible">
+          Subiendo imagen...
+        </div>
         <div class="upload-image-complete mt-5 invisible">
           ¡Completo!
+        </div>
+        <div class="upload-image-error d-none">
+          <p>
+            Ha ocurrido un error. Si deseas volver a intentar <a href="#" onclick="window.location.reload()">haz click aqu&iacute;</a>.
+          </p>
+          <p>
+            Alternativamente puedes enviar el comprobante por medio de correo electr&oacute;nico a la direcci&oacute;n <a href="mailto:info@rotarycostarica.org">info@rotarycostarica.org</a> y presionar el siguiente bot&oacute;n para continuar:
+          </p>
+          <div class="row mx-0">
+            <div class="col-6 col-md-5">
+              &nbsp;
+            </div>
+            <div class="d-none d-md-flex col-2"></div>
+            <div class="col-6 col-md-5">
+              <a class="btn cta smaller next" href="#" role="button">Siguiente <i class="fas fa-long-arrow-alt-right"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="step d-none">
         <h2 class="mt-4">
           <span class="step-number">02.</span> <span class="step-title">Datos personales</span>
         </h2>
+        <img class="deposit-image" src="" width="100">
         <form>
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="Fulanito de Tal">
+            <input type="text" class="form-control" id="name" placeholder="Jos&eacute; Rafael Bola&ntilde;os">
           </div>
           <div class="form-group">
             <label for="phone">Tel&eacute;fono</label>
@@ -108,7 +151,7 @@
           </div>
           <div class="form-group">
             <label for="phone">Correo electr&oacute;nico</label>
-            <input type="text" class="form-control" id="email" placeholder="fulanitodetal@gmail.com">
+            <input type="text" class="form-control" id="email" placeholder="micorreo@gmail.com">
           </div>
           <div class="form-group">
             <label for="club">Club</label>
@@ -143,45 +186,6 @@
       </div>
       <div class="step d-none">
         <h2 class="mt-4">
-          <span class="step-number">03.</span> <span class="step-title">Tipo de pago</span>
-        </h2>
-        <div class="boxed-choices row mx-0">
-          <a href="#" class="choice-box col-6 choice-1 deposit-choice">
-            <span class="choice-box-title text-center mb-2">
-              Dep&oacute;sito
-            </span>
-            <span class="choice-box-details">
-              <strong>CC:</strong><br class="d-sm-none"/> 0918283749490<br/>
-              <strong>Nombre:</strong><br class="d-sm-none"/> Club Rotario Heredia<br/>
-              <strong>Ced. Jur&iacute;dica:</strong><br class="d-sm-none"/> 3-101-12345
-            </span>
-          </a>
-          <a href="#" class="choice-box col-6 choice-2 next">
-            <span class="choice-box-title text-center mb-2">
-              Efectivo
-            </span>
-            <span class="choice-box-details">
-              Contra entrega
-            </span>
-          </a>
-        </div>
-        <div class="upload-image-container row mx-0 mt-4 invisible">
-          <div class="col-8">
-            <a class="btn cta smaller pick-file" href="#" role="button">Escoger Archivo</a>
-          </div>
-          <div class="col-4 pr-0 pt-3 image-name-holder">
-            <span class="image-name"></span>
-          </div>
-          <div class="file-handler">
-            <input type="file" name="files" />
-          </div>
-        </div>
-        <div class="upload-image-complete mt-5 invisible">
-          ¡Completo!
-        </div>
-      </div>
-      <div class="step d-none">
-        <h2 class="mt-4">
           <span class="step-number">04.</span> <span class="step-title">M&eacute;todo de entrega</span>
         </h2>
         <div class="boxed-choices row mx-0">
@@ -202,6 +206,15 @@
               Agendemos una visita a mi club Rotario o Rotaract
             </span>
           </a>
+        </div>
+        <div class="row mx-0 mt-4">
+          <div class="col-6 col-md-5">
+            <a class="btn cta smaller back" href="#" role="button"><i class="fas fa-long-arrow-alt-left"></i> Anterior</a>
+          </div>
+          <div class="d-none d-md-flex col-2"></div>
+          <div class="col-6 col-md-5">
+            &nbsp;
+          </div>
         </div>
       </div>
       <div class="step d-none">
@@ -233,10 +246,21 @@
         </div>
       </div>
       <div class="step last-step d-none">
-        <h2 class="mt-4 mb-4">
-          <span class="step-number">06.</span> <span class="step-title">Compartir #EndPolioCR</span>
+        <div class="saving mt-5">
+          Enviando orden...
+        </div>
+        <div class="saving-error d-none">
+          <p>
+            Ha ocurrido un error. Si deseas volver a intentar <a href="#" onclick="window.location.reload()">haz click aqu&iacute;</a>.
+          </p>
+          <p>
+            Alternativamente puedes enviar la informaci&oacute;n de la orden por medio de correo electr&oacute;nico a la direcci&oacute;n <a href="mailto:info@rotarycostarica.org">info@rotarycostarica.org</a> y te contactaremos a la brevedad posible.
+          </p>
+        </div>
+        <h2 class="mt-4 mb-4 invisible">
+          ¡Tu orden ha sido recibida! Ahora comparte #EndPolioCR
         </h2>
-        <div class="py-4 text-center">
+        <div class="py-4 text-center invisible">
           <a href="https://www.facebook.com/clubrotaractheredia/" target="_blank">
             <img class="social mr-4" src="/assets/logo-facebook.svg" alt="">
           </a>
@@ -244,7 +268,7 @@
             <img class="social" src="/assets/logo-instagram.svg" alt="">
           </a>
         </div>
-        <div class="row mx-0 py-4 text-center">
+        <div class="row mx-0 py-4 text-center invisible">
           <div class="d-none d-sm-flex col-2 col-md-3"></div>
           <div class="col-12 col-sm-8 col-md-6">
             <a class="btn cta" href="/adquiri-el-pin" role="button">Adquirir otro Pin</a>
