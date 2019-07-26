@@ -13,6 +13,17 @@ function initAdquiriElPin() {
   self.payment = 'Efectivo';
   self.apiUrl = 'https://522pdlmiel.execute-api.us-east-1.amazonaws.com/prod/';
 
+  $('.form-control').focus(function(e) {
+    var control = $(e.target);
+    control.attr('data-placeholder', control.attr('placeholder'));
+    control.attr('placeholder', '');
+  });
+
+  $('.form-control').blur(function(e) {
+    var control = $(e.target);
+    control.attr('placeholder', control.attr('data-placeholder'));
+  });
+
   $('.pick-file').click(function(e) {
     e.preventDefault();
     $(e.target).parent().parent().find('[type=file]').trigger('click'); 
