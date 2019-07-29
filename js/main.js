@@ -11,7 +11,7 @@ function initAdquiriElPin() {
 
   self.currentStep = 1;
   self.payment = 'Efectivo';
-  self.apiUrl = 'https://522pdlmiel.execute-api.us-east-1.amazonaws.com/prod/';
+  self.apiUrl = 'https://5l3csp0z6j.execute-api.us-east-1.amazonaws.com/prod/';
 
   $('.form-control').focus(function(e) {
     var control = $(e.target);
